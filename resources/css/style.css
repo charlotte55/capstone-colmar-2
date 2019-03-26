@@ -108,6 +108,7 @@ nav span{
 
 .article{
   display: inline-flex;
+  align-items: flex-start;
 }
 
 .article img{
@@ -150,16 +151,18 @@ nav span{
   margin-right: 4.5rem;
   margin-left: 4.5rem;
   margin-bottom: 2rem;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .box{
-  width: 25%;
-  padding: 1rem;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 30%;
 }
 
 .box img{
+  width: 100%;
   height: auto;
 }
 
