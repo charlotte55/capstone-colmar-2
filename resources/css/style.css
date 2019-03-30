@@ -6,6 +6,11 @@ html{
   color: rgba(85,85,85);
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 /* navigation */
 .desktop-header{
   display: flex;
@@ -27,6 +32,11 @@ header img{
 
 .title{
   flex-grow: inherit;
+  font-size: 1.75rem;
+}
+
+.title strong{
+  color: rgba(178,96,36);
 }
 
 nav{
@@ -34,7 +44,8 @@ nav{
 }
 
 nav span{
-  padding: 0.5rem;
+  padding: 0.9rem;
+  font-size: 1.25rem;
 }
 
 .mobile-header{
@@ -71,7 +82,7 @@ nav span{
   position: relative;
   margin: 0;
   flex-direction: row;
-  background-color: rgba(212,212,212);
+  background-color: rgba(210,230,232);
 }
 
 .banner{
@@ -96,12 +107,12 @@ nav span{
 }
 
 .start-button{
- background-color: rgba(100,100,100);
+ background-color: rgba(178,96,36);
 }
 
 .start-button p{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: white;
   text-align: center;
 }
@@ -180,13 +191,18 @@ nav span{
   margin: auto;
 }
 
+.content p a{
+  color: rgba(178,96,36);
+  text-decoration: underline;
+}
+
 .time{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 .article:last-child{
-  background-color: rgba(200,200,200);
+  background-color: rgba(143,186,180);
 }
 
 .mobile-column2{
@@ -229,7 +245,7 @@ nav span{
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: rgba(210,210,210);
+  background-color: rgba(210,230,232);
   position: relative;
   top: 4rem;
 }
@@ -266,6 +282,8 @@ nav span{
 .description p a{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  color: rgba(178,96,36);
+  text-decoration: underline;
 }
 
 .mobile-container3{
@@ -289,7 +307,7 @@ nav span{
 
   .class-title{
     display: flex;
-    background-color: rgba(210,210,210);
+    background-color: rgba(143,186,180);
     margin: 0.5rem;
     padding: 1rem 1rem 1.5rem 1rem;
   }
@@ -347,7 +365,7 @@ nav span{
 }
 
 #thesis-box-1{
-  background-color: rgba(210,210,210);
+  background-color: rgba(143,186,180);
 }
 
 /* media query - container 4 */
