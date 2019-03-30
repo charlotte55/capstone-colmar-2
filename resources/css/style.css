@@ -21,8 +21,8 @@ html{
 }
 
 header img{
+  padding-left: 10px;
   height: 2rem;
-  padding-left: 10px
 }
 
 .title{
@@ -52,6 +52,10 @@ nav span{
     height: 4rem;
     z-index: 5;
     background-color: white;
+  }
+
+  .mobile-header img{
+    padding-top: 1rem;
   }
 
   .desktop-header{
@@ -131,7 +135,6 @@ nav span{
 
   .start-button{
     width: 90%;
-    margin: center
   }
 }
 
@@ -211,7 +214,12 @@ nav span{
   }
 
   .article-mobile img{
+    margin: auto;
+    padding: 1rem;
+  }
 
+  .content-mobile{
+    padding-left: 2rem;
   }
 }
 
