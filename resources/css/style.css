@@ -1,3 +1,4 @@
+
 /* universal styles */
 html{
   font-size: 16px;
@@ -6,7 +7,7 @@ html{
 }
 
 /* navigation */
-header{
+.desktop-header{
   display: flex;
   position: fixed;
   align-items: center;
@@ -34,6 +35,28 @@ nav{
 
 nav span{
   padding: 0.5rem;
+}
+
+.mobile-header{
+  display: none;
+}
+
+/* media query - navigation */
+@media only screen and (max-width: 650px){
+  .mobile-header{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    width: 100%;
+    position: fixed;
+    height: 4rem;
+    z-index: 5;
+    background-color: white;
+  }
+
+  .desktop-header{
+    display: none;
+  }
 }
 
 /* container 1 - start here */
@@ -77,6 +100,39 @@ nav span{
   padding-bottom: 0.5rem;
   color: white;
   text-align: center;
+}
+
+/* media query - container 1 */
+
+@media only screen and (max-width: 650px){
+  .container1{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner{
+    width: 100%;
+  }
+
+  .banner img{
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .learn{
+    width: 100%;
+    margin: 2rem 1rem;
+  }
+
+  .learn h2{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .start-button{
+    width: 90%;
+    margin: center
+  }
 }
 
 /* container 2 - Keep Practicing */
@@ -130,6 +186,36 @@ nav span{
   background-color: rgba(200,200,200);
 }
 
+.mobile-column2{
+  display: none;
+}
+
+/* media query - container 2 */
+
+@media only screen and (max-width: 650px){
+  .column1{
+    display: none;
+}
+
+  .column2{
+    display: none;
+  }
+
+  .mobile-column2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article:last-child{
+    background-color: white;
+  }
+
+  .article-mobile img{
+
+  }
+}
+
+
 /* container 3 - Start Learning */
 .container3{
   display: flex;
@@ -172,6 +258,33 @@ nav span{
 .description p a{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.mobile-container3{
+  display: none;
+}
+
+/* media query - container 3 */
+@media only screen and (max-width: 650px){
+  .container3{
+    background-color: white;
+  }
+  .courses{
+    display: none;
+  }
+
+  .mobile-container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .class-title{
+    display: flex;
+    background-color: rgba(210,210,210);
+    margin: 0.5rem;
+    padding: 1rem 1rem 1.5rem 1rem;
+  }
 }
 
 /* container 4 - Thesis Exhibit */
@@ -229,6 +342,25 @@ nav span{
   background-color: rgba(210,210,210);
 }
 
+/* media query - container 4 */
+@media only screen and (max-width: 650px){
+  .column2-4{
+    display: none;
+  }
+
+  .column1-4{
+    width: 100%;
+  }
+
+  .column1-4 h3{
+    display: none;
+  }
+
+  .column1-4 p{
+    display: none;
+  }
+}
+
 /* footer */
 footer{
   display: flex;
@@ -244,4 +376,16 @@ footer{
 
 footer span{
   padding: 1rem;
+}
+
+/* media query - footer */
+@media only screen and (max-width: 650px){
+  footer div{
+    display: none;
+  }
+
+  footer span{
+    margin: 1rem;
+  }
+
 }
