@@ -11,6 +11,10 @@ a{
   color: inherit;
 }
 
+body{
+ margin-top: 0;
+}
+
 /* navigation */
 .desktop-header{
   display: flex;
@@ -110,7 +114,7 @@ nav span{
 
 .start-button:hover {
   background-color: rgba(255,152,77);
-  transition: background-color 500ms ease-out;
+  transition: background-color 500ms ease;
 }
 
 
@@ -185,8 +189,8 @@ nav span{
 }
 
 .article:hover{
-  transition: border 100ms ease-in-out;
-  border: 2px solid rgba(178,96,36);
+  transition: background-color 100ms ease-in-out;
+  background-color: rgba(143,186,180);
 }
 
 .article img{
@@ -211,6 +215,11 @@ nav span{
 }
 
 .article:last-child{
+  background-color: rgba(210,210,210);
+}
+
+.article:last-child:hover{
+  transition: background-color 100ms ease-in-out;
   background-color: rgba(143,186,180);
 }
 
@@ -246,6 +255,11 @@ nav span{
 
   .content-mobile{
     padding-left: 2rem;
+  }
+
+  .content-mobile p a{
+    color: rgba(178,96,36);
+    text-decoration: underline;
   }
 }
 
@@ -283,6 +297,11 @@ nav span{
 .box img{
   width: 100%;
   height: auto;
+}
+
+.box:hover{
+  transition: background-color 100ms ease-in-out;
+  background-color: rgba(143,186,180);
 }
 
 .description{
@@ -370,9 +389,13 @@ nav span{
   align-items: flex-start;
 }
 
+.thesis-box:first-child{
+  background-color: rgba(210,210,210);
+}
+
 .thesis-box:hover{
-  transition: border 100ms ease-in-out;
-  border: 2px solid rgba(178,96,36);
+  transition: background-color 100ms ease-in-out;
+  background-color: rgba(143,186,180);
 }
 
 .thesis-box img{
@@ -383,10 +406,6 @@ nav span{
 
 .thesis-description{
   align-self: center;
-}
-
-#thesis-box-1{
-  background-color: rgba(143,186,180);
 }
 
 /* media query - container 4 */
@@ -434,5 +453,4 @@ footer span{
   footer span{
     margin: 1rem;
   }
-
 }
