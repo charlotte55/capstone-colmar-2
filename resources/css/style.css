@@ -110,7 +110,7 @@ nav span{
 
 .start-button:hover {
   background-color: rgba(255,152,77);
-  transition: background-color 500ms ease-in-out;
+  transition: background-color 500ms ease-out;
 }
 
 
